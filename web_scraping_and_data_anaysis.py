@@ -91,7 +91,7 @@ close_button.click()
 list_before_excel = []
 
 # Turn through the district list.
-for j in range(773, len(ilce_list)):
+for j in range(len(ilce_list)):
     
         # Wait for the district input field to be clickable. Click and write district to input.
     wait.until(expected_conditions.element_to_be_clickable((By.XPATH, "/html/body/div/div/div[3]/div[1]/div/div[5]/div/div/div[2]/div[2]/div/input")))
