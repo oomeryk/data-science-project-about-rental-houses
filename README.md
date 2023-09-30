@@ -6,3 +6,4 @@ To access rental advertisement information from Emlakjet website, list of distri
 
 ~
 Emlakjet sitesinden kiralık ilan bilgilerine ulaşmak için türkiye deki ilçeler listesi gerekiyordu. Selenium kullanılarak "https://www.drdatastats.com/turkiye-il-ve-ilceler-listesi/" sitesinden bu liste oluşturuldu. Daha sonra "https://www.emlakjet.com/kiralik-konut/" sitesinde ilçeler listesinin elemanları selenyum yardımıyla sırayla aratılarak türkiyedeki tüm kiralık konut ilanları ele geçirilip excel dosyasına atıldı. Numpy ve pandas kullanılarak excel dosyasındaki veriseti düzenlenip analiz edildi.
+[adverts.xlsx](https://github.com/oomeryk/web_scraping_and_data_anaysis/files/12774424/adverts.xlsx)
