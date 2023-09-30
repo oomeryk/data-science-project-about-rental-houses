@@ -181,8 +181,7 @@ df.head(4)
 
 # Cell 5
 # Add list of new_index to the DataFrame as a new column and set new_index to real index numbers
-new_index = np.arange(len(df))
-df[''] = new_index
+df[''] = np.arange(len(df))
 df = df.set_index('')
 df.head(4)
 
@@ -208,8 +207,7 @@ len(df)
 
 # Cell 9
 # Add list of new_index to the DataFrame as a new column and set new_index to real index numbers
-new_index = np.arange(len(df))
-df[''] = new_index
+df[''] = np.arange(len(df))
 df = df.set_index('')
 
 # Cell 10
@@ -247,8 +245,7 @@ df = df.drop("address", axis=1)
 
 # Cell 15
 # Add list of new_index to the DataFrame as a new column and set new_index to real index numbers
-new_index = np.arange(len(df))
-df[''] = new_index
+df[''] = np.arange(len(df))
 df = df.set_index('')
 
 # Cell 16
@@ -273,8 +270,7 @@ for i in range(len(df)):
 
 # Cell 19
 # Add list of new_index to the DataFrame as a new column and set new_index to real index numbers
-new_index = np.arange(len(df))
-df[''] = new_index
+df[''] = np.arange(len(df))
 df = df.set_index('')
 
 # Cell 20
@@ -294,8 +290,7 @@ df.describe().T
 
 # Cell 24
 # Add list of new_index to the DataFrame as a new column and set new_index to real index numbers
-new_index = np.arange(len(df))
-df[''] = new_index
+df[''] = np.arange(len(df))
 df = df.set_index('')
 
 # Cell 25
@@ -317,8 +312,7 @@ for i in range(len(df)):
 
 # Cell 28
 # Add list of new_index to the DataFrame as a new column and set new_index to real index numbers
-new_index = np.arange(len(df))
-df[''] = new_index
+df[''] = np.arange(len(df))
 df = df.set_index('')
 
 # Cell 29
@@ -332,8 +326,7 @@ a-len(df)
 
 # Cell 31
 # Add list of new_index to the DataFrame as a new column and set new_index to real index numbers
-new_index = np.arange(len(df))
-df[''] = new_index
+df[''] = np.arange(len(df))
 df = df.set_index('')
 
 # Cell 32
@@ -356,8 +349,7 @@ df.iloc[17362:17365]
 
 # Cell 37
 # Add list of new_index to the DataFrame as a new column and set new_index to real index numbers
-new_index = np.arange(len(df))
-df[''] = new_index
+df[''] = np.arange(len(df))
 df = df.set_index('')
 
 # Cell 38
