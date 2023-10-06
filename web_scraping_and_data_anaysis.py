@@ -1,3 +1,6 @@
+### Rental house market project of Türkiye with using selenium, pandas, numpy, matplotlib in python
+
+## 1- Web Scraping
 ############################################################################################
 
 # We should install and set up 'chrome driver' on computer.
@@ -6,6 +9,7 @@
 import pandas as pd
 import numpy as np
 import selenium
+import matplotlib.pyplot as plt
 
 # Import necessary modules for web browsing with Selenium.
 from selenium import webdriver
@@ -162,7 +166,7 @@ pddf.to_excel("emlakjet.xlsx")
 
 
 #########################################################################################
-###  DATA ANALYSIS
+###  2- DATA ANALYSIS
 
 # Cell 1 
 d = pd.read_excel("emlak_jet.xlsx")
@@ -358,6 +362,86 @@ df
 # Cell 39
 # save dataframe to excel
 df.to_excel("adverts.xlsx")
+
+
+############################################################################
+## 3- Visulation
+
+# Cell 40
+data = pd.read_excel("adverts.xlsx")
+
+# Cell 41
+df = data.copy()
+df.tail()
+
+# Cell 42
+df.drop("Unnamed: 0", axis=1, inplace=True)
+df.tail()
+
+#### How many house types are there according to the number of rooms? Showing in pie chart
+
+# Cell 43
+print(df["room"].unique())
+len(df["room"].unique())
+
+# the code below can also write using 'groupby' method!
+
+# Cell 44
+unique_room_list = df["room"].unique()
+
+# Cell 45
+twoone= [] # mean of "twoone" is "2+1" house
+fourone= []
+treeone= []
+oneone= []
+onezero= []
+for i in range(len(df)):
+    if unique_room_list[0] == df["room"][i]:
+        twoone.append(df["room"][i])
+    elif unique_room_list[1] == df["room"][i]:
+        fourone.append(df["room"][i])
+    elif unique_room_list[2] == df["room"][i]:
+        treeone.append(df["room"][i])
+    elif unique_room_list[3] == df["room"][i]:
+        oneone.append(df["room"][i])
+    else:
+        onezero.append(df["room"][i])
+print(f"count of 4+1 house: {len(fourone)}")
+print(f"count of 3+1 house: {len(treeone)}")
+print(f"count of 2+1 house: {len(twoone)}")
+print(f"count of 1+1 house: {len(oneone)}")
+print(f"count of 1+0 house: {len(onezero)}")
+
+# Cell 46
+# determination x and y labels of pie chart 
+x = np.array(["4+1", "3+1", "2+1", "1+1", "1+0"])
+y = np.array([len(fourone), len(treeone), len(twoone), len(oneone), len(onezero)])
+
+# Cell 47
+# create pie chart
+plt.pie(y, labels=x)
+plt.title("count of room numbers")
+plt.show()
+
+# Cell 48
+#### Average of rental house prices in bar plot
+prices_mean_of_each_cities = df.groupby("city")["price"].mean()
+
+# Cell 49
+prices_mean_of_each_cities = pd.DataFrame(prices_mean_of_each_cities)
+prices_mean_of_each_cities.head()
+
+# Cell 50
+x = prices_mean_of_each_cities.index
+y = prices_mean_of_each_cities["price"]
+
+# Cell 51
+plt.figure(figsize=(6, 16))
+plt.grid(linewidth=0.4,  axis="x")
+
+plt.barh(x, y,  height=0.5,  color=["red","blue"])
+plt.show()
+
 
 
 
