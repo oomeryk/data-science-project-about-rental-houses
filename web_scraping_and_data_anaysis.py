@@ -442,8 +442,30 @@ plt.grid(linewidth=0.4,  axis="x")
 plt.barh(x, y,  height=0.5,  color=["red","blue"])
 plt.show()
 
+# Cell 52
+# compare m² and home type
+y = df.groupby("room")["m²"].mean()
+x = np.array(["1+0", "1+1", "2+1", "3+1", "4+1"])
 
+plt.grid()
+plt.title("compare m² and home type")
+plt.scatter(x,y, s=50)
+plt.show()
 
+# Cell 53
+# count of rental house in logarithmic scale
+df["constant"] = 1
+
+y = df.groupby("city")["constant"].sum()
+x = pd.DataFrame(y).index
+
+plt.figure(figsize=(10, 15))
+plt.grid()
+plt.xscale("log")
+
+plt.scatter(y, x)
+plt.title("count of rental house in logarithmic scale")
+plt.show()
 
 
 
