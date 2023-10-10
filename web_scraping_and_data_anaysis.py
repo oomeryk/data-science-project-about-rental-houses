@@ -469,8 +469,8 @@ plt.scatter(y, x)
 plt.title("count of rental house in logarithmic scale")
 plt.show()
 
-
-
+# Cell 54
+df.describe().T
 
 
 
