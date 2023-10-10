@@ -267,6 +267,7 @@ print(df["m²"].dtype)
 print(df["price"].dtype)
 
 # Cell 18
+# deleting outliers
 # if "price">75000 or "price"<2000 drop this row
 for i in range(len(df)):
     if df["price"][i]>75000 or df["price"][i]<2000:
@@ -284,6 +285,7 @@ df.head()
 df.describe().T
 
 # Cell 22
+# deleting outliers
 # if "m²">300 or "m²"<20 drop this row
 for i in range(len(df)):
     if df["m²"][i]>300 or df["m²"][i]<20:
