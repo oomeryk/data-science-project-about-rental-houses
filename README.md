@@ -1,4 +1,4 @@
-# web_scraping_and_data_anaysis
+# Web_scraping--Data_analysis--Data_visulation--Machine_learning
 Web scraping on two sites using selenium. Analyzing and visualization the extracted data with pandas - numpy - matplotlib.
 
 ~ENG
