@@ -1,5 +1,5 @@
 # web_scraping--data_analysis--data_visulation--machine_learning
-Data science project consisting of 4 parts:   1-Web Scraping    2-Data_Analysis    3-Data_Visulation    4-Machine_Learning
+Data science project consisting of 4 parts:   1-Web Scraping    2-Data Analysis    3-Data Visulation    4-Machine Learning
 
 Web scraping on two sites using selenium library in python. Analyzing and visualization the extracted data with pandas - numpy - matplotlib - seaborn libraries. Creating machine learning algorithms and showing predicted price and many useful output based on entered, desired rental house informations in Türkiye.
 
