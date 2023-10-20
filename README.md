@@ -1,5 +1,5 @@
-# web_scraping--data_analysis--data_visulation--machine_learning
-Data science project consisting of 4 parts:   1-Web Scraping    2-Data Analysis    3-Data Visulation    4-Machine Learning
+# web_scraping--data_analysis--data_visualization--machine_learning
+Data science project consisting of 4 parts:   1-Web Scraping    2-Data Analysis    3-Data Visualization    4-Machine Learning
 
 Web scraping on two sites using selenium library in python. Analyzing and visualization the extracted data with pandas - numpy - matplotlib - seaborn libraries. Creating machine learning algorithms and showing predicted price and many useful output based on entered, desired rental house informations in Türkiye.
 
@@ -10,7 +10,7 @@ To access rental advertisement information from Emlakjet website, list of distri
 
 Edited excel file: [adverts.xlsx](https://github.com/oomeryk/Data_Science_Project/files/13048614/adverts.xlsx). 
 
-Then, the necessary visualizations were made using matplotlib and useful outputs were obtained with XGBoost algorithm.
+Then, the necessary visualization were made using matplotlib and useful outputs were obtained with XGBoost algorithm.
 
 The slow execution of the selenium code is shown in this video:  https://github.com/oomeryk/web_scraping_and_data_anaysis/assets/127151005/9c0a54c5-61e5-4af8-aade-6d5437ced2dc
    
