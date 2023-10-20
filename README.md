@@ -14,7 +14,7 @@ Then, the necessary visualizations were made.
 
 ~TR
 
-Emlakjet sitesinden kiralık ilan bilgilerine ulaşmak için Türkiye'deki ilçeler listesi gerekiyordu. Selenium kullanılarak "https://www.drdatastats.com/turkiye-il-ve-ilceler-listesi/" sitesinden bu liste oluşturuldu. Daha sonra "https://www.emlakjet.com/kiralik-konut/" sitesinde, oluşturulan ilçeler listesinin elemanları selenyum yardımıyla sırayla aratılarak Türkiye'deki tüm kiralık konut ilanları ele geçirilip excel dosyasına ([emlakjet.xlsx](https://github.com/oomeryk/web_scraping_and_data_anaysis/files/12775494/emlakjet.xlsx)) atıldı. Numpy ve pandas kullanılarak excel dosyasındaki veriseti düzenlenip analiz edildi. 
+Emlakjet sitesinden kiralık ilan bilgilerine ulaşmak için Türkiye'deki ilçeler listesi gerekiyordu. Selenium kullanılarak "https://www.drdatastats.com/turkiye-il-ve-ilceler-listesi/" sitesinden bu liste oluşturuldu. Daha sonra "https://www.emlakjet.com/kiralik-konut/" sitesinde, oluşturulan ilçeler listesinin elemanları selenyum yardımıyla sırayla aratılarak Türkiye'deki tüm kiralık konut ilanları alınıp excel dosyasına ([emlakjet.xlsx](https://github.com/oomeryk/web_scraping_and_data_anaysis/files/12775494/emlakjet.xlsx)) atıldı. Numpy ve pandas kullanılarak excel dosyasındaki veriseti düzenlenip analiz edildi. 
  
  Düzenlenmiş excel dosyası: [advertss.xlsx](https://github.com/oomeryk/web_scraping_and_data_anaysis/files/13034418/advertss.xlsx). 
  Daha sonra gerekli görselleştirmeler yapıldı.
