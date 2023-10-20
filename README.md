@@ -1,5 +1,5 @@
 # web_scraping--data_analysis--data_visulation--machine_learning
-Web scraping on two sites using selenium library in python. Analyzing and visualization the extracted data with pandas - numpy - matplotlib - seaborn libraries. Create machine learning algorithms and showing predicted price and many useful output using based on entered, desired rental house informations in Türkiye.
+Web scraping on two sites using selenium library in python. Analyzing and visualization the extracted data with pandas - numpy - matplotlib - seaborn libraries. Create machine learning algorithms and showing predicted price and many useful output based on entered, desired rental house informations in Türkiye.
 
 ~ENG
 
