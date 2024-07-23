@@ -1,5 +1,5 @@
 # web_scraping--data_analysis--data_visualization--machine_learning
-Data science project consisting of 4 parts:   1-Web Scraping    2-Data Analysis    3-Data Visualization    4-Machine Learning
+Data science project consisting of 4 parts:   1-Web Scraping    2-Data Preprocessing    3-Data Visualization    4-Machine Learning
 
 Web scraping on two sites using selenium library in python. Analyzing and visualization the extracted data with pandas - numpy - matplotlib - seaborn libraries. Creating machine learning algorithms and showing predicted price and many useful output based on entered, desired rental house informations in Türkiye.
 
@@ -20,7 +20,7 @@ Prediction application made by machine learning algorithm:  ![ML-output-screensh
 
 ~TR
 
-4 bölümden oluşan veri bilimi projesi: 1-Web Kazıma 2-Veri Analizi 3-Veri Görselleştirme 4-Makine Öğrenimi
+4 bölümden oluşan veri bilimi projesi: 1-Web Kazıma 2-Veri Önişleme 3-Veri Görselleştirme 4-Makine Öğrenimi
 
 Python'da Selenium kütüphanesini kullanarak iki sitede web kazıma. Çıkarılan verilerin pandas - numpy - matplotlib - seaborn kütüphaneleriyle analiz edilmesi ve görselleştirilmesi. Türkiye'de girilen, istenen kiralık ev bilgilerine göre makine öğrenimi algoritmaları oluşturmak ve tahmini fiyat ve birçok faydalı çıktıyı göstermek.
 
